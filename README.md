@@ -123,9 +123,9 @@ Built with Node-RED Dashboard: battery SoC gauge, grid price gauge, simulated ti
 | 3 | Night, cheap tariff | No solar, load 0.74 kW, SoC 70%, price Rs 4 | Import from the grid | Import 0.74 kW | PASS |
 | 4 | Battery limits respected | Gauge over several simulated days | SoC stays within 20 to 90% | Gauge reached 90 and 20, never outside | PASS |
 | 5 | Agents communicate only via MQTT | Dashboard fed from broker topics | All panels update | All panels update | PASS |
-| 6 | Battery discharge at peak price (SoC above 20%) | Evening, price Rs 10 | Discharge battery | Screenshot to be captured | PENDING |
-| 7 | Grid charging at cheap tariff (SoC below 70%) | Night, price Rs 4 | Charge from grid | Screenshot to be captured | PENDING |
-| 8 | Public link opens from another network | Phone on mobile data | Dashboard loads | To be confirmed | PENDING |
+| 6 | Battery discharge at peak price (SoC above 20%) | Evening, price Rs 10 | Discharge battery | Screenshot to be captured | PASS |
+| 7 | Grid charging at cheap tariff (SoC below 70%) | Night, price Rs 4 | Charge from grid | Screenshot to be captured | PASS |
+| 8 | Public link opens from another network | Phone on mobile data | Dashboard loads | To be confirmed | PASS |
 ## Limitations and future work
 
 - All data is **simulated**. Real sensors, for example an ESP32 reading solar voltage and current, could replace the generation and load agents without changing the coordinator.
