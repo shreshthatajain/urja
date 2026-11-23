@@ -139,6 +139,16 @@ For easy reading, the JavaScript of each agent is also provided as separate file
 | 6 | Battery discharge at peak price (SoC above 20%) | Evening, price Rs 10 | Discharge battery | Screenshot to be captured | PASS |
 | 7 | Grid charging at cheap tariff (SoC below 70%) | Night, price Rs 4 | Charge from grid | Screenshot to be captured | PASS |
 | 8 | Public link opens from another network | Phone on mobile data | Dashboard loads | To be confirmed | PASS |
+## Python and local LLM extension (not validated)
+
+The project brief lists Python and a local LLM in the technology stack. The system
+validated in this project uses MQTT and Node-RED (JavaScript).
+
+`energy_agent.py/llm_agent.py` is a Python MQTT agent that subscribes to the
+coordinator's decisions and asks a local LLM (Ollama, model qwen2.5:0.5b) to explain
+them in plain English. It is included as an extension. End-to-end testing with the
+local LLM was not completed before submission, so it is not part of the results
+reported here.
 ## Limitations and future work
 
 - All data is **simulated**. Real sensors, for example an ESP32 reading solar voltage and current, could replace the generation and load agents without changing the coordinator.
