@@ -105,6 +105,19 @@ Built with Node-RED Dashboard: battery SoC gauge, grid price gauge, simulated ti
 ├── docs/           # screenshots
 └── README.md
 ```
+## Code overview
+
+The agents run inside Node-RED, so the executable source is `flows.json`.
+For easy reading, the JavaScript of each agent is also provided as separate files in `src/`:
+
+- `clock.js`: simulation clock (1 tick = 15 simulated minutes)
+- `generation_agent.js`: solar output and supply bid
+- `load_agent.js`: demand and flexible-load bid
+- `pricing_agent.js`: buy and sell price
+- `storage_agent.js`: 10 kWh battery model and its bid
+- `coordinator_agent.js`: negotiation logic and decisions
+- `dashboard_router.js`: routes MQTT data to the dashboard
+- `ping_endpoint.js`: keep-alive address for the free host
 
 ## Run it locally
 
