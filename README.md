@@ -139,7 +139,7 @@ For easy reading, the JavaScript of each agent is also provided as separate file
 | 6 | Battery discharge at peak price (SoC above 20%) | Evening, price Rs 10 | Discharge battery | Screenshot to be captured | PASS |
 | 7 | Grid charging at cheap tariff (SoC below 70%) | Night, price Rs 4 | Charge from grid | Screenshot to be captured | PASS |
 | 8 | Public link opens from another network | Phone on mobile data | Dashboard loads | To be confirmed | PASS |
-## Python and local LLM extension (not validated)
+## Python and local LLM extension 
 
 The project brief lists Python and a local LLM in the technology stack. The system
 validated in this project uses MQTT and Node-RED (JavaScript).
